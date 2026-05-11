@@ -24,7 +24,7 @@ chmod +x install.sh
 ## Notes
 
 - Configurations are opinionated and tailored to my workflow.
-- Tested on Fedora 44 Workstation.
+- Tested on Ubuntu 26.04 LTS.
 
 ## License
 

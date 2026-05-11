@@ -7,7 +7,7 @@ echo "========================================"
 echo ""
  
 echo "[*] installing packages..."
-sudo dnf install neovim zsh tmux git fzf fd-find bat eza git-delta -y
+sudo apt install neovim zsh tmux git fzf fdfind batcat eza git-delta -y
 echo "[+] packages installed."
 echo ""
  

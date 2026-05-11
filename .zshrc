@@ -34,20 +34,21 @@ eval "$(fzf --zsh)"
 
 # Aliases.
 alias vim="nvim"
+alias bat="batcat"
 alias l="eza --color=always --all --long --git --icons=always"
 alias ll="eza --color=always --all --long --git --icons=always --tree --level=2"
 
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_DEFAULT_COMMAND="fdfind --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+export FZF_ALT_C_COMMAND="fdfind --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 _fzf_compgen_path() {
-    fd --hidden --exclude .git . "$1"
+    fdfind --hidden --exclude .git . "$1"
 }
 
-# Use fd to generate the list for directory completion.
+# Use fdfind to generate the list for directory completion.
 _fzf_compgen_dir() {
-    fd --type=d --hidden --exclude .git . "$1"
+    fdfind --type=d --hidden --exclude .git . "$1"
 }
 
 show_file_or_dir_preview="
