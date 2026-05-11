@@ -6,24 +6,29 @@ My personal configuration files for unix environments.
 
 | File/Dir | Description |
 |----------|-------------|
-| `.nvim/` | Neovim configuration |
+| `nvim/` | Neovim configuration |
 | `.zshrc` | Zsh shell configuration, aliases, and environment variables |
 | `.gitconfig` | Git identity, aliases, and preferences |
+| `.tmux.conf` | Tmux configuration |
 
 ## Requirements
 
 - [`neovim`](https://neovim.io/) - text editor
-- [`zsh`](https://www.zsh.org/) - the z shell
-- `git`
+- [`zsh`](https://www.zsh.org/) - the Z shell
+- [`tmux`](https://github.com/tmux/tmux) - terminal multiplexer
+- [`git`](https://git-scm.com) - the stupid content tracker
 
 ## Installation
 
-```bash
-sudo dnf install neovim
-sudo dnf install zsh
+Run the following commands to get started.
 
-cp -r .nvim ~/.config/
-cp -r .gitconfig ~/
+```bash
+sudo dnf install neovim zsh tmux git
+
+ln -sf "$PWD/nvim" ~/.config/nvim
+ln -sf "$PWD/.zshrc" ~/.zshrc
+ln -sf "$PWD/.gitconfig" ~/.gitconfig
+ln -sf "$PWD/.tmux.conf" ~/.tmux.conf
 ```
 
 ## Notes
@@ -33,5 +38,5 @@ cp -r .gitconfig ~/
 
 ## License
 
-Feel free to modify these and use them as you see it.
+Feel free to modify these and use them as you see fit.
 
