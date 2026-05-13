@@ -8,6 +8,9 @@ return {
     event = { "InsertLeave", "TextChanged" },
     opts = {
         immediate_save = { "InsertLeave", "TextChanged" },
+        condition = function(buf)
+            return vim.bo[buf].filetype ~= "harpoon"
+        end,
     },
 }
 

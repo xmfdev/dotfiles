@@ -44,3 +44,4 @@ return {
         keymap.set("n", "<leader>fy", "<cmd>Telescope neoclip<cr>")
     end
 }
+
