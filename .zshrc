@@ -1,3 +1,5 @@
+# Oh My Zsh configuration -------------------------------------------------------
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -13,9 +15,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration ------------------------------------------------------------
+# User configuration -----------------------------------------------------------
 
 # Export variables.
+export PATH="$PATH:/usr/local/go/bin:$HOME/.local/bin"
 export LANG=en_US.UTF-8
 export BAT_THEME="Catppuccin Mocha"
 
