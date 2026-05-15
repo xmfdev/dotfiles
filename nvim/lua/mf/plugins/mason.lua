@@ -9,7 +9,8 @@ return {
             "clangd",
             "html",
             "cssls",
-            "ts_ls"
+            "ts_ls",
+            "gopls"
         }
     },
     dependencies = {
@@ -28,4 +29,3 @@ return {
         "neovim/nvim-lspconfig"
     },
 }
-

@@ -25,7 +25,10 @@ return {
                 "bash",
                 "vim",
                 "vimdoc",
-                "gitignore"
+                "gitignore",
+                "go",
+                "markdown",
+                "markdown_inline"
             },
             incremental_selection = {
                 enable = true,
@@ -39,4 +42,3 @@ return {
         })
     end
 }
-

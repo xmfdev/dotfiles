@@ -20,6 +20,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
         -- Show LSP implementations.
         opts.desc = "Show LSP implementations"
         keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
+
         -- Show LSP definitions.
         opts.desc = "Show LSP type definitions"
         keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts)
@@ -74,4 +75,3 @@ vim.diagnostic.config({
         },
     },
 })
-

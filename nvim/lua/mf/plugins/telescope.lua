@@ -15,6 +15,10 @@ return {
 
         telescope.setup({
             defaults = {
+                layout_config = {
+                    prompt_position = "top",
+                },
+                sorting_strategy = "ascending",
                 path_display = { "smart" },
                 mappings = {
                     i = {
@@ -30,12 +34,12 @@ return {
 
         local keymap = vim.keymap
 
-        -- Fuzzy find files in cwd.
-        -- Fuzzy find recent files.
-        -- Find string in cwd.
-        -- Find string under cursor in cwd.
-        -- Find TODOs.
-        -- Look at yank history.
+        -- find_files: Fuzzy find files in cwd.
+        -- oldfiles: Fuzzy find recent files.
+        -- live_grep: Find string in cwd.
+        -- grep_string: Find string under cursor in cwd.
+        -- TodoTelescope: Find TODOs.
+        -- neoclip: Look at yank history.
         keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
         keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>")
         keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
@@ -44,4 +48,3 @@ return {
         keymap.set("n", "<leader>fy", "<cmd>Telescope neoclip<cr>")
     end
 }
-

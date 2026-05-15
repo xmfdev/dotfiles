@@ -11,4 +11,3 @@ return {
     version = "*",
     config = true,
 }
-

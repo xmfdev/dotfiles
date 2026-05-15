@@ -4,4 +4,3 @@
 return {
     "kkharji/sqlite.lua",
 }
-

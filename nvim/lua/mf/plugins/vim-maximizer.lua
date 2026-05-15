@@ -7,4 +7,3 @@ return {
         { "<leader>sm", "<cmd>MaximizerToggle<CR>" },
     },
 }
-

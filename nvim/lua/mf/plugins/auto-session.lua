@@ -17,4 +17,3 @@ return {
         keymap.set("n", "<leader>wr", "<cmd>AutoSession restore<CR>")
     end
 }
-

@@ -17,4 +17,3 @@ return {
         keymap.set("x", "s", substitute.visual)
     end
 }
-

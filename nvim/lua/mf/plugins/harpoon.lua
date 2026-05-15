@@ -29,4 +29,3 @@ return {
         keymap.set("n", "<leader>p", function() harpoon:list():next() end)
     end
 }
-
