@@ -41,10 +41,12 @@ opt.smartcase = true
 -- background: Set background to dark.
 -- signcolumn: Enable gutter.
 -- showmode: Disable the default current mode label.
+-- colorcolumn: Show a column guide.
 opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 opt.showmode = false
+opt.colorcolumn = "101"
 
 -- Splitting
 --
