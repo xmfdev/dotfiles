@@ -54,3 +54,13 @@ opt.colorcolumn = "101"
 -- splitbelow: Split horizontal window to the bottom.
 opt.splitright = true
 opt.splitbelow = true
+
+-- Prevent readonly buffers from being modified.
+vim.api.nvim_create_autocmd("BufReadPost", {
+    callback = function()
+        if vim.fn.filewritable(vim.fn.expand("%")) == 0 then
+            vim.opt_local.modifiable = false
+            vim.opt_local.readonly = true
+        end
+    end,
+})
