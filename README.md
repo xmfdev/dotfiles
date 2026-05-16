@@ -23,8 +23,8 @@ chmod +x install.sh
 
 ## Notes
 
-- Configurations are opinionated and tailored to my workflow.
 - Tested on Ubuntu 26.04 LTS.
+- Configurations are opinionated and tailored to my workflow.
 
 ## License
 

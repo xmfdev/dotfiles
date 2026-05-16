@@ -40,6 +40,7 @@ alias vim="nvim"
 alias bat="batcat"
 alias l="eza --color=always --all --long --git --icons=always"
 alias ll="eza --color=always --all --long --git --icons=always --tree --level=2"
+alias godot="cd ~/dotfiles"
 
 export FZF_DEFAULT_COMMAND="fdfind --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
