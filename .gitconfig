@@ -25,3 +25,6 @@
 
 [init]
 	defaultBranch = master
+
+[advice]
+    addEmptyPathspec = false
