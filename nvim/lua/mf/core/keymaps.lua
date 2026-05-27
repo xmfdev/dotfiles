@@ -30,3 +30,20 @@ keymap.set("n", "<C-k>", "<C-w>k")
 -- Indenting.
 keymap.set("n", ">", ">>")
 keymap.set("n", "<", "<<")
+
+-- Switch between source/header files.
+---@diagnostic disable: param-type-mismatch
+keymap.set("n", "<leader>j", function()
+    vim.lsp.buf_request(0, "textDocument/switchSourceHeader", { uri = vim.uri_from_bufnr(0) },
+        function(err, result)
+            if err then
+                vim.notify("switchSourceHeader: " .. err.message, vim.log.levels.WARN)
+            elseif result then
+                vim.cmd("edit " .. vim.uri_to_fname(result))
+            else
+                vim.notify("No corresponding file found", vim.log.levels.WARN)
+            end
+        end
+    )
+end)
+---@diagnostic enable: param-type-mismatch
