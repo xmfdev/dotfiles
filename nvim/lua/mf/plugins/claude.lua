@@ -5,6 +5,11 @@ return {
     "coder/claudecode.nvim",
     dependencies = { "folke/snacks.nvim" },
     config = true,
+    opts = {
+        diff_opts = {
+            layout = "horizontal",
+        },
+    },
     keys = {
         -- Toggle claude window.
         { "<leader>ui", "<cmd>ClaudeCode<cr>" },
