@@ -10,7 +10,8 @@ return {
             "html",
             "cssls",
             "ts_ls",
-            "gopls"
+            "gopls",
+            "yamlls",
         }
     },
     dependencies = {
