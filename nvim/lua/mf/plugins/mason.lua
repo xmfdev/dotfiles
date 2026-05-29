@@ -12,6 +12,7 @@ return {
             "ts_ls",
             "gopls",
             "yamlls",
+            "bashls",
         }
     },
     dependencies = {
