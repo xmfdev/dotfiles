@@ -28,6 +28,15 @@ return {
                     },
                 },
             },
+            pickers = {
+                find_files = {
+                    hidden = true,
+                    file_ignore_patterns = { "^.git/" },
+                },
+                live_grep = {
+                    additional_args = { "--hidden" },
+                },
+            },
         })
 
         telescope.load_extension("fzf")
@@ -37,13 +46,11 @@ return {
         -- find_files: Fuzzy find files in cwd.
         -- oldfiles: Fuzzy find recent files.
         -- live_grep: Find string in cwd.
-        -- grep_string: Find string under cursor in cwd.
         -- TodoTelescope: Find TODOs.
         -- neoclip: Look at yank history.
         keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
         keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>")
         keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>")
-        keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
         keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>")
         keymap.set("n", "<leader>fy", "<cmd>Telescope neoclip<cr>")
     end
